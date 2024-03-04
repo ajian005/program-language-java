@@ -59,8 +59,7 @@ public class NIO_Client {
         if (socketChannel.isConnectionPending()) {
             socketChannel.finishConnect();
         }
-        socketChannel.configureBlocking(false);
-        socketChannel.write(ByteBuffer.wrap("it‘s client msg".getBytes()));
+        socketChannel.configureBlocking(false);socketChannel.write(ByteBuffer.wrap("it‘s client msg".getBytes()));
         socketChannel.register(selector, SelectionKey.OP_READ);
     }
 }

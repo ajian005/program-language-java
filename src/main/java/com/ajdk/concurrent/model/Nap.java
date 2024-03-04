@@ -1,4 +1,4 @@
-package com.jdk.concurrent;
+package com.ajdk.concurrent.model;
 
 import java.util.concurrent.TimeUnit;
 

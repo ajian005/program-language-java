@@ -1,4 +1,4 @@
-package com.jdk.concurrent;
+package com.ajdk.concurrent.model;
 
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -7,7 +7,6 @@ import java.util.stream.IntStream;
  * 线程池使用
  */
 public class ThreadPoolDemo {
-
     public static void main(String[] args) {
         ExecutorService exec = getExecutorServiceFactory("");
         IntStream.range(0, 10).mapToObj(NapTask::new).forEach(exec::execute);

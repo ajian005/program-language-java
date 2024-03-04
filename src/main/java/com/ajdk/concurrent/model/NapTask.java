@@ -1,4 +1,4 @@
-package com.jdk.concurrent;
+package com.ajdk.concurrent.model;
 
 public class NapTask implements Runnable{
     final int id;
